@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="img/logoTec.png" width="100px" height="100px" alt="">
+            </div>
+            <div class="menu">
+                <a href="index.html">Datos</a>
+                <a href="tabla.html">Tabla de comandos</a>
+                <a href="conclusion.html">Conclusión</a>
+            </div>
+            <div class="logo">
+                <img src="img/logoTecN.png" width="200px" height="100px" alt="">
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <h1>Tabla de comandos GIT</h1>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Comando</th>
+                                <th>Descripción</th>
+                                <th>Parametros</th>
+                                <th>Categoria</th>
+                                <th>Ejemplo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>git config −−global user.name</td>
+                                <td>Permite asociar un nombre de usuario</td>
+                                <td>"user-name"</td>
+                                <td>Configuración basica</td>
+                                <td>git config −−global user.name "XxXelBichoXxX"</td>
+                            </tr>
+                            <tr>
+                                <td>git config −−global user.email</td>
+                                <td>Permite asociar un coreo electronico</td>
+                                <td>"email"</td>
+                                <td>Configuración basica</td>
+                                <td>git config −−global user.name vimapachecoro@ittepic.edu.mx</td>
+                            </tr>
+                            <tr>
+                                <td>git config −−global</td>
+                                <td>Permite abrir el fichero de configuración de git</td>
+                                <td>-e: permite abrir el archivo en un editor de texto</td>
+                                <td>Configuración basica</td>
+                                <td>git config −−global -e path/to/.git/config</td>
+                            </tr>
+                            <tr>
+                                <td>git init</td>
+                                <td>Inicializar el repositorio como git</td>
+                                <td>-</td>
+                                <td>Inicialización</td>
+                                <td>git init</td>
+                            </tr>
+                            <tr>
+                                <td>git clone</td>
+                                <td>Recuperar un repositorio a nuestro ordenador</td>
+                                <td>URL</td>
+                                <td>Inicialización</td>
+                                <td>git clone https://github.com/XxXelbichoXxX/iw2023ittepic</td>
+                            </tr>
+                            <tr>
+                                <td>git status</td>
+                                <td>Mostar los cambios en el directorio de trabajo</td>
+                                <td>-</td>
+                                <td>Escenarios de trabajo</td>
+                                <td>git status</td>
+                            </tr>
+                            <tr>
+                                <td>git reset</td>
+                                <td>quita un archivo a un commit</td>
+                                <td>"archivo": quita un único archivo / --soft HEAD: Quita todos los cambios</td>
+                                <td>Escenarios de trabajo</td>
+                                <td>git reset a.txt</td>
+                            </tr>
+                            <tr>
+                                <td>git diff</td>
+                                <td>Diferenciar cambios en un commit</td>
+                                <td>--staged: saber que se diferencia pero aun no esta en commit</td>
+                                <td>Escenarios de trabajo</td>
+                                <td>git reset a.txt</td>
+                            </tr>
+                            <tr>
+                                <td>git commit -m “[mensaje]”</td>
+                                <td>Realizar un commit</td>
+                                <td>-m: permite agregar un mensaje al commit</td>
+                                <td>Escenarios de trabajo</td>
+                                <td>git commit -m "Descripcion"</td>
+                            </tr>
+                            <tr>
+                                <td>git branch</td>
+                                <td>Ver las ramas disponibles</td>
+                                <td>-</td>
+                                <td>Ramas</td>
+                                <td>git branch</td>
+                            </tr>
+                            <tr>
+                                <td>git branch [nombre de rama]</td>
+                                <td>Crear una rama</td>
+                                <td>-</td>
+                                <td>Ramas</td>
+                                <td>git branch nuevaRama</td>
+                            </tr>
+                            <tr>
+                                <td>git checkout</td>
+                                <td>Crear, eliminar o desplazar hacia una rama</td>
+                                <td>-b: Creación de una nueva rama / -d: Eliminar una rama / --.: Volver al commit
+                                    anterior
+                                </td>
+                                <td>Ramas</td>
+                                <td>git checkout -b nuevaRama</td>
+                            </tr>
+                            <tr>
+                                <td>git merge [rama]</td>
+                                <td>Fusionar dos ramas</td>
+                                <td>-</td>
+                                <td>Ramas</td>
+                                <td>git merge nuevaRama</td>
+                            </tr>
+                            <tr>
+                                <td>git log</td>
+                                <td>Mostrar un historial de commits en la rama actual</td>
+                                <td>--follow: se utiliza para mostrar cierto archivo a traves del tiempo</td>
+                                <td>Ramas</td>
+                                <td>git log</td>
+                            </tr>
+                            <tr>
+                                <td>git diff</td>
+                                <td>Mostrar cambios ente una rama y otra</td>
+                                <td>-</td>
+                                <td>Ramas</td>
+                                <td>git diff a...b</td>
+                            </tr>
+                            <tr>
+                                <td>git rm [fichero]</td>
+                                <td>Eliminar el archivo del proyecto</td>
+                                <td>-</td>
+                                <td>Ramas</td>
+                                <td>git rm archivo</td>
+                            </tr>
+                            <tr>
+                                <td>git mv [origen] [destino]</td>
+                                <td>Mover un archivo o directorio</td>
+                                <td>-</td>
+                                <td>Ramas</td>
+                                <td>git mv A B</td>
+                            </tr>
+                            <tr>
+                                <td>git remote add [var][url]</td>
+                                <td>Agregar un repositorio remoto al repositorio local</td>
+                                <td>-</td>
+                                <td>Operaciones en ramas</td>
+                                <td>git remote add origin https://github.com/XxXelbichoXxX/iw2023ittepic</td>
+                            </tr>
+                            <tr>
+                                <td>git fetch [var]</td>
+                                <td>Listar ramas que se encuentran en el remoto</td>
+                                <td>-</td>
+                                <td>Operaciones en ramas</td>
+                                <td>git fetch origin</td>
+                            </tr>
+                            <tr>
+                                <td>git merge [rama]</td>
+                                <td>Fusionar rama remota en la rama local</td>
+                                <td>-</td>
+                                <td>Operaciones en ramas</td>
+                                <td>git merge rama</td>
+                            </tr>
+                            <tr>
+                                <td>git push [var][rama]</td>
+                                <td>Subir los commits locales al remoto</td>
+                                <td>-</td>
+                                <td>Operaciones en ramas</td>
+                                <td>git push origin rama</td>
+                            </tr>
+                            <tr>
+                                <td>git pull</td>
+                                <td>Fusionar los commits remotos a la rama local</td>
+                                <td>-</td>
+                                <td>Operaciones en ramas</td>
+                                <td>git pull</td>
+                            </tr>
+                            <tr>
+                                <td>git rebase [rama]</td>
+                                <td>Aplicar un commit por delante de la rama especificada</td>
+                                <td>-</td>
+                                <td>Operaciones en ramas</td>
+                                <td>git rebase rama</td>
+                            </tr>
+                            <tr>
+                                <td>git tag -a [id] -m [mensaje del tag]</td>
+                                <td>Crear un tag</td>
+                                <td>-a: Asignarle un ID al tag / -m: Agregar un mensaje al tag</td>
+                                <td>Tags</td>
+                                <td>git tag -a v0.1 -m 'Mi primer tag'</td>
+                            </tr>
+                            <tr>
+                                <td>git tag -d [id]</td>
+                                <td>Eliminar un tag</td>
+                                <td>-d: eliminar un tag</td>
+                                <td>Tags</td>
+                                <td>git tag -a v0.1 -m 'Mi primer tag'</td>
+                            </tr>
+                            <tr>
+                                <td>git stash</td>
+                                <td>Permite realiza commits temporales</td>
+                                <td>list: Lista el orden de pila de cambios / pop: Eliminar de la pila de cambios / drop: descartar los cambios actuales / clear: borrar todas las entradas del stash / apply: restaurar el último registro del stash / save: guardar todos los archivos / branch: crear una rama a partir de un stash / show: información acerca del stash</td>
+                                <td>Operaciones en commits</td>
+                                <td>git stash / list / pop / drop / clear / apply / save / branch / show</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+
+    </header>
+
+</body>
+
+</html>
